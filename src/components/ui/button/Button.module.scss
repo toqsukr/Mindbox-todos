@@ -1,0 +1,13 @@
+.button {
+  width: 100%;
+  background-color: #422956;
+  color: white;
+  font-size: 1.4rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: opacity 0.2s;
+  &:disabled {
+    opacity: 0.7;
+    cursor: auto;
+  }
+}

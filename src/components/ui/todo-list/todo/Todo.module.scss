@@ -1,0 +1,23 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: no-wrap;
+  word-break: break-all;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  background: linear-gradient(to left, #53436c, #422956);
+  transition: opacity 0.2s;
+  &:first-child {
+    border-top-left-radius: 1.5rem;
+  }
+  &:last-child {
+    border-bottom-left-radius: 1.5rem;
+  }
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

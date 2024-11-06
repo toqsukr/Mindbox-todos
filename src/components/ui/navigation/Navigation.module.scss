@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.elem {
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.active {
+  opacity: 1;
+}

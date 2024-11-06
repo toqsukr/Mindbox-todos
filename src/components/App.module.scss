@@ -1,0 +1,27 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #362d3f;
+}
+
+.todo_section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 900px;
+  height: 650px;
+  background: linear-gradient(to top, #2f6075, #7d3858);
+  border-radius: 1.25rem;
+  padding: 3.5rem 6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  > h1 {
+    color: white;
+    font-size: 2.5rem;
+  }
+}
