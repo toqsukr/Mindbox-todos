@@ -17,8 +17,13 @@ const AddTodo: FC<AddTodoProp> = ({ addTodo, disabled }) => {
 
   return (
     <div className={css.add_todo}>
-      <Input ref={ref} disabled={disabled} />
-      <Button onClick={handleClick} disabled={disabled}>
+      <Input
+        ref={ref}
+        disabled={disabled}
+        data-testid='add-todo-input'
+        placeholder="What's need to be done?"
+      />
+      <Button data-testid='add-todo-btn' onClick={handleClick} disabled={disabled}>
         Add
       </Button>
     </div>

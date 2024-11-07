@@ -42,6 +42,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: Roboto, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 input,
@@ -79,13 +80,5 @@ div {
 }
 
 ::-webkit-scrollbar {
-  width: 0.9rem;
-}
-
-::-webkit-scrollbar-track {
-  background: #53436c;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #422956;
+  display: none;
 }

@@ -20,6 +20,10 @@ const App = () => {
     )
   }
 
+  const deleteTodo = (id: string) => {
+    setTodos(prev => prev.filter(todo => todo.id !== id))
+  }
+
   const handleNavClick = (status: TodoStatus) => {
     setStatus(status)
   }
@@ -44,7 +48,7 @@ const App = () => {
           <Navigation elements={elements} />
         </header>
         <AddTodo addTodo={addTodo} disabled={todoStatus === 'Done'} />
-        <Todos todos={todos} toggleTodo={toggleTodo} status={todoStatus} />
+        <Todos todos={todos} toggleTodo={toggleTodo} status={todoStatus} deleteTodo={deleteTodo} />
       </section>
     </main>
   )

@@ -1,7 +1,6 @@
-import { Todo, TodoStatus } from '../../type'
+import { TodoStatus } from '../../type'
+import { TodoListProp } from '../ui/todo-list/TodoList.type'
 
 export type TodosProp = {
-  todos: Todo[]
   status: TodoStatus
-  toggleTodo: (id: string, checked: boolean) => void
-}
+} & TodoListProp

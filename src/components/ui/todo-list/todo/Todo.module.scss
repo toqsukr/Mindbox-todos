@@ -5,19 +5,32 @@
   flex-wrap: no-wrap;
   word-break: break-all;
   color: white;
-  font-size: 1.2rem;
-  padding: 1.5rem;
+  font-size: 1.3rem;
+  padding: 1rem;
   background: linear-gradient(to left, #53436c, #422956);
   transition: opacity 0.2s;
   &:first-child {
+    border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
   }
   &:last-child {
     border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
   }
 }
 
 .done {
   text-decoration: line-through;
-  opacity: 0.5;
+  opacity: 0.7;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  > svg {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+  }
 }

@@ -20,7 +20,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "sourceMap": true,
+    "noImplicitAny": true
   },
-  "include": ["src"]
+
+  "include": ["src", "./src/**/*.ts"]
 }

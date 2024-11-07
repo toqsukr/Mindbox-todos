@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #362d3f;
+  background-color: white;
 }
 
 .todo_section {
@@ -12,9 +12,10 @@
   gap: 1.5rem;
   width: 900px;
   height: 650px;
-  background: linear-gradient(to top, #2f6075, #7d3858);
+  background: linear-gradient(to top, #4fa4b9, #bf7c9c);
   border-radius: 1.25rem;
   padding: 3.5rem 6rem;
+  box-shadow: 0px 0px 4px 4px rgba(220, 220, 220);
 }
 
 .header {
